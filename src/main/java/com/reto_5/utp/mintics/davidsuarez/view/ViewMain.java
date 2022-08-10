@@ -90,7 +90,9 @@ public class ViewMain extends JFrame {
         panel1.removeAll();
         panel1.revalidate();
         model = new DefaultTableModel();
+        
         table = new JTable(model);
+        table.setEnabled(false);
         model.addColumn("ID");
         model.addColumn("Nombre");
         model.addColumn("Apellido");
@@ -105,6 +107,7 @@ public class ViewMain extends JFrame {
 
             
         }
+        
         sc = new JScrollPane(table);
         panel1.add(new JLabel("Lideres"),BorderLayout.NORTH);
         panel1.add(sc,BorderLayout.CENTER);
@@ -121,6 +124,7 @@ public class ViewMain extends JFrame {
         panel1.revalidate();
         model = new DefaultTableModel();
         table = new JTable(model);
+        table.setEnabled(false);
         model.addColumn("ID_Proyecto");
         model.addColumn("Constructora");
         model.addColumn("Nùmero_Habitaciones");
@@ -147,6 +151,7 @@ public class ViewMain extends JFrame {
         panel1.revalidate();
         model = new DefaultTableModel();
         table = new JTable(model);
+        table.setEnabled(false);
         model.addColumn("ID_Proyecto");
         model.addColumn("Constructora");
         model.addColumn("Banco Vinculado");
