@@ -40,10 +40,10 @@ public class ViewMain extends JFrame {
         setTitle("reto 5");
         panel1 = new JPanel();
         panel1.setLayout(new BorderLayout());
-        panel1.setBackground(Color.BLUE);
+
 
         panel2 = new JPanel();
-        panel2.setBackground(Color.black);
+    
 
         this.controller = controller;
         
